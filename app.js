@@ -20,14 +20,15 @@ const usernameLable = blessed.text({
   parent: screen,
   top: 3,
   left: 5,
-  content: 'FIRST NAME:',
+  content: 'USERNAME:',
 });
 const username = blessed.textbox({
   parent: form,
   name: 'username',
   top: 2,
-  left: 5,
+  left: 7,
   height: 3,
+  width: '50%',
   inputOnFocus: true,
   content: 'username',
   border: {
@@ -48,8 +49,9 @@ const password = blessed.textbox({
   parent: form,
   name: 'password',
   top: 6,
-  left: 5,
+  left: 7,
   height: 3,
+  width: '50%',
   inputOnFocus: true,
   content: '********',
   border: {
@@ -106,7 +108,7 @@ const cancel = blessed.button({
   },
 });
 
-// Info
+// Message
 var msg = blessed.message({
   parent: screen,
   top: 14,
